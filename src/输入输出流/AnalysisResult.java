@@ -6,7 +6,7 @@ package 输入输出流;
     public class AnalysisResult {
         public static void main(String args[]){
             File fRead=new File("C:\\Users\\LIU  YAN  PING\\Desktop\\新建文件夹\\score.txt");
-            File fWrite=new File("scoreAnalyze.txt");
+            File fWrite=new File("C:\\Users\\LIU  YAN  PING\\Desktop\\新建文件夹scoreAnalyze.txt");
             try {Writer out = new FileWriter(fWrite, true);
                 BufferedWriter bufferWrite = new BufferedWriter(out);
                 Reader in = new FileReader(fRead);
