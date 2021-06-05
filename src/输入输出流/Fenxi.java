@@ -13,12 +13,28 @@ public class Fenxi {
             try {
                 double score = scanner.nextDouble();
                 totalScore = totalScore + score;
-            }
-            catch (InputMismatchException exp) {
+            } catch (InputMismatchException exp) {
                 String t = scanner.next();
 
             }
         }
         return totalScore;
     }
-}
+        public static double getAverageScore (String a){
+            Scanner scanner = new Scanner(a);
+            scanner.useDelimiter("[^0123456789.]+");
+            double averageScore = 0;
+            double count=3;
+            while (scanner.hasNext()) {
+                try {
+                    double totalScore = scanner.nextDouble();
+
+                    averageScore = totalScore / count;
+                } catch (InputMismatchException exp) {
+                    String t = scanner.next();
+
+                }
+            }
+            return averageScore;
+        }
+    }

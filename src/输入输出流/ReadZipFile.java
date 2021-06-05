@@ -9,8 +9,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip .ZipInputStream;
 public class ReadZipFile {
             public static void main(String args[]) {
-                File f = new File(" book.zip");
-                File dir = new File(" mybook");
+                File f = new File(" C:\\Users\\LIU  YAN  PING\\Desktop\\新建压缩(zipped)文件夹\\book.zip");
+                File dir = new File(" C:\\Users\\LIU  YAN  PING\\Desktop\\新建压缩(zipped)文件夹\\mybook");
                 byte b[] = new byte[100];
             dir.mkdir();
             try {
