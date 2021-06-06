@@ -14,10 +14,13 @@ public class AnalysisResult {
             String str = null;
             while ((str = bufferRead.readLine()) != null) {
                 double totalScore=Fenxi.getTotalScore(str);
-                double averageScore=Fenxi.getAverageScore(str);
+               double average=Fenxi.getTotalScore(str);
+                average=totalScore/3;
+                str=str+"平均成绩："+average;
+
 
                 str=str+"总分：" +totalScore;
-                str=str+"平均分" +averageScore;
+                
 
                 System.out.println(str);
                 bufferWrite.write(str);
